@@ -78,7 +78,7 @@ LIMIT 5;
 
 /*
 Create a table to store the original CSV data.
-Use VARCHAR to preserve values before cleaning (before converting to numbers or dates). Avoids errors caused by inconsistant or invalid data types and formatting.
+Use VARCHAR to preserve values before cleaning (before converting to numbers or dates). Avoids errors caused by inconsistent or invalid data types and formatting.
 */
 
 CREATE TABLE COASTERS_RAW (
@@ -134,7 +134,7 @@ FROM
 -- ========================================
 
 /*
-Check total rows, duplicaties, and missing values.
+Check total rows, duplicates, and missing values.
 */
 
 SELECT
@@ -180,7 +180,7 @@ CREATE OR REPLACE TABLE COASTERS_CLEAN AS
 
 --Check row count matches
 SELECT COUNT(*)
-FROM COASTERS_CLEAN; --It matches, duplicates were droped
+FROM COASTERS_CLEAN; --It matches, duplicates were dropped
 
 -- Check height and speed values, then calculate their averages
 
